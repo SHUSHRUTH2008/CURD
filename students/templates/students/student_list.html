@@ -1,0 +1,20 @@
+{% extends 'students/base.html' %}
+{% block content %}
+<h1>Student Records</h1>
+<a href="{% url 'student_create' %}" class="btn btn-add">+ Add Student</a>
+<table>
+  <tr><th>Roll No</th><th>Name</th><th>Email</th><th>Department</th><th>Year</th><th>Actions</th></tr>
+  {% for s in students %}
+  <tr>
+    <td>{{ s.roll_number }}</td><td>{{ s.name }}</td><td>{{ s.email }}</td>
+    <td>{{ s.department }}</td><td>{{ s.year }}</td>
+    <td>
+      <a href="{% url 'student_update' s.pk %}" class="btn btn-edit">Edit</a>
+      <a href="{% url 'student_delete' s.pk %}" class="btn btn-del">Delete</a>
+    </td>
+  </tr>
+  {% empty %}
+  <tr><td colspan="6">No students found. Click "Add Student" to create one.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
