@@ -1,26 +1,32 @@
-# Student Records CRUD (Django + HTML)
+# EX.No: 03 DEVELOP A DJANGO-BASED CRUD APPLICATION
+## Date:
+## AIM
 
-## Run in VS Code
-1. Open this folder in VS Code (File > Open Folder), then open the terminal (Ctrl + `).
-2. Create and activate a virtual environment:
-   - Windows: `python -m venv venv` then `venv\Scripts\activate`
-   - Mac/Linux: `python3 -m venv venv` then `source venv/bin/activate`
-3. Install Django: `pip install -r requirements.txt`
-4. Create the database: `python manage.py migrate`
-5. Start the server: `python manage.py runserver`
-6. Open http://127.0.0.1:8000/ in your browser.
+To develop a Django-based web application that performs CRUD (Create, Read, Update, and Delete) operations on student records.
 
-## Operations
-- Create: click "Add Student"
-- Read: the home page lists all students
-- Update: click "Edit" on a row
-- Delete: click "Delete" on a row, then confirm
+## ALGORITHM
 
-## Submission (GitHub)
-Take screenshots of each operation and save them in a `screenshots/` folder, then:
-```
-git add .
-git commit -m "Student CRUD app with Django"
-git push origin main
-```
-Submit your forked repository URL.
+1. Create a Django project and an application.
+2. Define the `Student` model with the required fields (Name and Email).
+3. Run migrations to create the database table.
+4. Configure URL routing for Home, Add, Update, and Delete operations.
+5. Create the `home()` view to retrieve and display all student records.
+6. Create the `add()` view to insert a new student record into the database.
+7. Create the `update()` view to modify an existing student record using its ID.
+8. Create the `delete()` view to remove a student record using its ID.
+9. Design the HTML page with separate forms/buttons for Add, View, Update, and Delete operations.
+10. Run the Django development server and perform all CRUD operations through the web browser.
+
+## PROGRAM
+
+
+
+## OUTPUT
+
+
+
+## RESULT
+
+A Django-based CRUD web application was successfully developed to perform Create, Read, Update, and Delete operations on student records using SQLite as the backend database.
+
+
